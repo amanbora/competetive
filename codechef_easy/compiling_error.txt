@@ -1,0 +1,244 @@
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:35:15: error: expected expression
+              [](const void *arg1, const void *arg2)->int
+              ^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:53:26: error: no viable overloaded '+='
+                      ans+=freq[i];
+                      ~~~^ ~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:965:45: note: candidate function not viable: no known conversion from 'int [2]' to 'const std::__1::basic_string<char>' for 1st argument
+    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(const basic_string& __str) {return append(__str);}
+                                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:975:45: note: candidate function not viable: no known conversion from 'int [2]' to 'const std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::value_type *' (aka 'const char *') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(const value_type* __s)     {return append(__s);}
+                                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:976:45: note: candidate function not viable: no known conversion from 'int [2]' to 'std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::value_type' (aka 'char') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(value_type __c)            {push_back(__c); return *this;}
+                                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:974:45: note: candidate template ignored: requirement '__can_be_converted_to_string_view<char, char_traits<char>, int [2]>::value' was not satisfied [with _Tp = int [2]]
+                                            operator+=(const _Tp& __t)            {__self_view __sv = __t; return append(__sv);}
+                                            ^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:54:30: error: cannot decrement value of type 'int [2]'
+                      freq[i]--;
+                      ~~~~~~~^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:56:28: error: no viable overloaded '+='
+                        ans+=freq[j];
+                        ~~~^ ~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:965:45: note: candidate function not viable: no known conversion from 'int [2]' to 'const std::__1::basic_string<char>' for 1st argument
+    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(const basic_string& __str) {return append(__str);}
+                                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:975:45: note: candidate function not viable: no known conversion from 'int [2]' to 'const std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::value_type *' (aka 'const char *') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(const value_type* __s)     {return append(__s);}
+                                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:976:45: note: candidate function not viable: no known conversion from 'int [2]' to 'std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::value_type' (aka 'char') for 1st argument
+    _LIBCPP_INLINE_VISIBILITY basic_string& operator+=(value_type __c)            {push_back(__c); return *this;}
+                                            ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:974:45: note: candidate template ignored: requirement '__can_be_converted_to_string_view<char, char_traits<char>, int [2]>::value' was not satisfied [with _Tp = int [2]]
+                                            operator+=(const _Tp& __t)            {__self_view __sv = __t; return append(__sv);}
+                                            ^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:57:32: error: cannot decrement value of type 'int [2]'
+                        freq[j]--;
+                        ~~~~~~~^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3931:17: error: no matching function for call to object of type 'std::__1::greater<int>'
+            if (__comp(*--__last, *__first))
+                ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:4117:5: note: in instantiation of function template specialization 'std::__1::__sort<std::__1::greater<int> &, int (*)[2]>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:49:15: note: in instantiation of function template specialization 'std::__1::sort<int (*)[2], std::__1::greater<int> >' requested here
+              sort(freq,freq+26,greater<int>());
+              ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3978:14: error: no matching function for call to object of type 'std::__1::greater<int>'
+        if (!__comp(*__i, *__m))  // if *__first == *__m
+             ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:4046:24: error: no matching function for call to object of type 'std::__1::greater<int>'
+                while (__comp(*__i, *__m))
+                       ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:4049:25: error: no matching function for call to object of type 'std::__1::greater<int>'
+                while (!__comp(*--__j, *__m))
+                        ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:4063:27: error: no matching function for call to object of type 'std::__1::greater<int>'
+        if (__i != __m && __comp(*__m, *__i))
+                          ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3681:10: error: no matching function for call to object of type 'std::__1::greater<int>'
+    if (!__c(*__y, *__x))          // if x <= y
+         ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3935:20: note: in instantiation of function template specialization 'std::__1::__sort3<std::__1::greater<int> &, int (*)[2]>' requested here
+            _VSTD::__sort3<_Compare>(__first, __first+1, --__last, __comp);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:4117:5: note: in instantiation of function template specialization 'std::__1::__sort<std::__1::greater<int> &, int (*)[2]>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:49:15: note: in instantiation of function template specialization 'std::__1::sort<int (*)[2], std::__1::greater<int> >' requested here
+              sort(freq,freq+26,greater<int>());
+              ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3695:9: error: no matching function for call to object of type 'std::__1::greater<int>'
+    if (__c(*__z, *__y))           // x > y, if y > z
+        ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3703:9: error: no matching function for call to object of type 'std::__1::greater<int>'
+    if (__c(*__z, *__y))           // if y > z
+        ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3718:20: error: no matching function for call to '__sort3'
+    unsigned __r = __sort3<_Compare>(__x1, __x2, __x3, __c);
+                   ^~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3938:20: note: in instantiation of function template specialization 'std::__1::__sort4<std::__1::greater<int> &, int (*)[2]>' requested here
+            _VSTD::__sort4<_Compare>(__first, __first+1, __first+2, --__last, __comp);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:4117:5: note: in instantiation of function template specialization 'std::__1::__sort<std::__1::greater<int> &, int (*)[2]>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:49:15: note: in instantiation of function template specialization 'std::__1::sort<int (*)[2], std::__1::greater<int> >' requested here
+              sort(freq,freq+26,greater<int>());
+              ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3678:1: note: candidate template ignored: substitution failure [with _Compare = std::__1::greater<int> &, _ForwardIterator = int (*)[2]]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3719:9: error: no matching function for call to object of type 'std::__1::greater<int>'
+    if (__c(*__x4, *__x3))
+        ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3744:20: error: no matching function for call to '__sort4'
+    unsigned __r = __sort4<_Compare>(__x1, __x2, __x3, __x4, __c);
+                   ^~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3941:20: note: in instantiation of function template specialization 'std::__1::__sort5<std::__1::greater<int> &, int (*)[2]>' requested here
+            _VSTD::__sort5<_Compare>(__first, __first+1, __first+2, __first+3, --__last, __comp);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:4117:5: note: in instantiation of function template specialization 'std::__1::__sort<std::__1::greater<int> &, int (*)[2]>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:49:15: note: in instantiation of function template specialization 'std::__1::sort<int (*)[2], std::__1::greater<int> >' requested here
+              sort(freq,freq+26,greater<int>());
+              ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3715:1: note: candidate template ignored: substitution failure [with _Compare = std::__1::greater<int> &, _ForwardIterator = int (*)[2]]
+__sort4(_ForwardIterator __x1, _ForwardIterator __x2, _ForwardIterator __x3,
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3745:9: error: no matching function for call to object of type 'std::__1::greater<int>'
+    if (__c(*__x5, *__x4))
+        ^~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+In file included from /Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:1:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3809:5: error: no matching function for call to '__sort3'
+    __sort3<_Compare>(__first, __first+1, __j, __comp);
+    ^~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3946:20: note: in instantiation of function template specialization 'std::__1::__insertion_sort_3<std::__1::greater<int> &, int (*)[2]>' requested here
+            _VSTD::__insertion_sort_3<_Compare>(__first, __last, __comp);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:4117:5: note: in instantiation of function template specialization 'std::__1::__sort<std::__1::greater<int> &, int (*)[2]>' requested here
+    __sort<_Comp_ref>(__first, __last, __comp);
+    ^
+/Users/aman/Desktop/CPrograms/codechef_easy/REARRSTR.cpp:49:15: note: in instantiation of function template specialization 'std::__1::sort<int (*)[2], std::__1::greater<int> >' requested here
+              sort(freq,freq+26,greater<int>());
+              ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3678:1: note: candidate template ignored: substitution failure [with _Compare = std::__1::greater<int> &, _ForwardIterator = int (*)[2]]
+__sort3(_ForwardIterator __x, _ForwardIterator __y, _ForwardIterator __z, _Compare __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:3812:13: error: no matching function for call to object of type 'std::__1::greater<int>'
+        if (__comp(*__i, *__j))
+            ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional:723:10: note: candidate function not viable: no known conversion from 'int [2]' to 'const int' for 1st argument
+    bool operator()(const _Tp& __x, const _Tp& __y) const
+         ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.

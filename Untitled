@@ -1,0 +1,65 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int a, b, c;
+
+    cin>>a>>b>>c;
+
+    int ans=0;
+
+    if(a>b)
+    {  if(a>c)
+      {    grt=a;
+          if(b>c)
+           {  lsr=b;
+               lea=c
+           }
+           else
+           {  lsr=c;
+               lea=b;
+           }
+         }
+       else
+       {
+          grt=c;
+          lsr=a;
+           lea=b;
+         }
+    }
+
+    else{
+       if(b>c)
+        {  gr=b;
+           if(a>c)
+            {  lsr=a;
+                lea=c
+            }
+            else
+            {  lsr=c;
+                lea=a;
+            }
+
+        }
+        else
+        {  gr=c;
+           lsr=b;
+           lea=a;  
+        }
+
+     }
+      while(gre>lsr+lea){
+          lsr++;
+          if(lsr<lea){
+              int temp=lsr;
+              lsr=lea;
+              lea=temp;
+          }
+          ans++;
+      }
+
+
+    cout<<ans;
+
+}

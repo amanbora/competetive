@@ -1,0 +1,7 @@
+/Users/aman/Desktop/CPrograms/EasyCC/CIELAB.cpp:9:18: error: reference to type 'const std::__1::__vector_base<std::__1::vector<int, std::__1::allocator<int> >, std::__1::allocator<std::__1::vector<int, std::__1::allocator<int> > > >::value_type' (aka 'const std::__1::vector<int, std::__1::allocator<int> >') could not bind to an rvalue of type 'int'
+    vv.push_back(1);
+                 ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector:688:62: note: passing argument to parameter '__x' here
+    _LIBCPP_INLINE_VISIBILITY void push_back(const_reference __x);
+                                                             ^
+1 error generated.
