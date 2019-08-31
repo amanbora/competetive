@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+
+    while(t--){
+        int a[3],c[3],flag=1;
+        cin>>a[0]>>a[1]>>a[2]>>c[0]>>c[1]>>c[2];
+
+        if(a[0]>a[1] && a[0]>a[2] && flag=1){
+            if(c[0]>c[1] && c[0]>c[2])
+              flag=1;
+            else flag=0;
+        }
+
+        if(a[1]>a[2] && a[1]>a[0] && flag){
+            if(c[1]>c[0] && c[1]>c[2])
+              ans=1;
+            else ans=-1;
+        }
+
+        if(a[2]>a[1] && a[2]>a[0] && flag){
+            if(c[2]>c[1] && c[2]>c[0])
+              ans=1;
+            ans=-1
+        }
+
+        if(a[1]==a[0] && flag){
+            if(c[1]==c[0])
+              flag=1;
+            else flag=0;
+        }
+
+        if(a[2]==a[0] && flag){
+            if(c[2]==c[0])
+              flag=1;
+            else flag=0;
+        }
+
+        if(a[1]==a[2] && flag){
+            if(c[1]==c[2])
+              flag=1;
+            else flag=0;
+        }
+
+        if(flag)cout<<"FAIR";
+        else cout<<"NOT FAIR";
+        cout<<endl;
+    }
+}
